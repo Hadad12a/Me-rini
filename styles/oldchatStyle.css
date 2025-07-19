@@ -1,0 +1,49 @@
+body{
+   background-color: #3B4049;
+   font-family: Arial, sans-serif;
+   margin: 0px;
+   padding: 0px;
+   font-size: 25px;
+}
+
+.massageCon{
+   display: flex;
+   justify-items: center;
+   gap: 10px;
+   margin: 15px;
+   text-align: center;
+}
+.massageCon .massage{
+   background-color: #c937ba57;
+   width: 100%;
+   border-radius: 20px 0px 20px 0px;
+   border: 2px solid #c937baa1;
+   font-family:Verdana;
+}
+.massages{
+   display: none;
+   top: 0px;
+   flex-direction: column;
+   text-align: center;
+   font-size: 25px;
+   background-color: #c937ba46;
+   margin: 20px 20px;
+   border-radius: 50px 0px 50px 0px;
+   padding: 10px 20px;
+   justify-content: center;
+}
+.massages p {
+   display: none;
+}
+.backBotton{
+   margin-bottom: 25px;
+}
+.backBotton a{
+   background-color: #c937ba57;
+   width: 100%;
+   border-radius: 20px 0px 20px 0px;
+   border: 2px solid #c937baa1;
+   font-family:Verdana;
+   text-decoration: none;
+   padding: 5px 15px;
+}
