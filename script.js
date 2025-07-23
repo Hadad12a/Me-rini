@@ -14,6 +14,7 @@ function closePopup(){
 
 function openMassage(massageNum){
    document.getElementById('massageCon').style.display = 'none';
+   document.getElementById('backMassagecon').style.display = 'none';
 
    const massage = "massage" + massageNum;
    document.getElementById(massage).style.display = 'flex';

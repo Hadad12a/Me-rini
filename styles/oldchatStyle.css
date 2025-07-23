@@ -7,7 +7,7 @@ body{
 }
 
 .massageCon{
-   display: flex;
+   display: grid;
    justify-items: center;
    gap: 10px;
    margin: 15px;
@@ -19,6 +19,12 @@ body{
    border-radius: 20px 0px 20px 0px;
    border: 2px solid #c937baa1;
    font-family:Verdana;
+   margin: 3px;
+   padding: 3px;
+}
+.massageCon .massage:hover{
+   cursor: pointer;
+   transform: scale(1.05);
 }
 .massages{
    display: none;
@@ -29,7 +35,7 @@ body{
    background-color: #c937ba46;
    margin: 20px 20px;
    border-radius: 50px 0px 50px 0px;
-   padding: 10px 20px;
+   padding: 10px 15px;
    justify-content: center;
 }
 .massages p {
@@ -37,6 +43,10 @@ body{
 }
 .backBotton{
    margin-bottom: 25px;
+   display: grid;
+   justify-content: center;
+   align-content: center;
+   text-align: center;
 }
 .backBotton a{
    background-color: #c937ba57;
@@ -45,5 +55,16 @@ body{
    border: 2px solid #c937baa1;
    font-family:Verdana;
    text-decoration: none;
-   padding: 5px 15px;
+   padding: 5px 15px 5px 15px;
+}
+
+#massageBackBotton{
+   display: flex;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+#massageBackBotton:hover{
+   transform: scale(1.05);
 }
