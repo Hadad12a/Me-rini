@@ -9,7 +9,7 @@
     </head>
 
     <body>
-        <div class="wrapper">
+        <div id="wrappr" class="wrapper">
             <div class="lid one"></div>
             <div class="lid two"></div>
             <div class="envelope"></div>
@@ -21,9 +21,24 @@
             </div>
         </div>
 
-        <div class="menu">
+        <div id="menuIndex" class="menu">
             <a href="Gallery.html">גלריה</a>
-            <a href="oldChat.html">הודעות ישנות</a>
+            <a href="oldChat.html">הודעות</a>
         </div>
+
+        <div id="homeImges" class="homeImges">
+            <img onclick="openIndexPopup('Images/indexImg/IMG_5122.PNG')" 
+            src="Images/indexImg/IMG_5122.PNG" alt="">
+
+            <img onclick="openIndexPopup('Images/indexImg/IMG_5123.PNG')" 
+            src="Images/indexImg/IMG_5123.PNG" alt="">
+        </div>
+
+        <div id="indexPopup" class="indexPopup">
+            <span class="close" onclick="indexPopupClose()">&times;</span>
+            <img id="indexPopupImg" src="" alt="">
+        </div>
+
+        <script src="script.js"></script>
     </body>
 </html>

@@ -21,3 +21,21 @@ function openMassage(massageNum){
 
    document.getElementById('massages').style.display = 'flex';
 }
+
+function openIndexPopup(img){
+   document.getElementById('homeImges').style.display = 'none';
+   document.getElementById('menuIndex').style.display = 'none';
+   document.getElementById('wrappr').style.display = 'none';
+
+   document.getElementById('indexPopup').style.display = 'grid';
+
+   document.getElementById('indexPopupImg').src = img;
+}
+
+function indexPopupClose(){
+   document.getElementById('homeImges').style.display = '';
+   document.getElementById('menuIndex').style.display = '';
+   document.getElementById('wrappr').style.display = '';
+
+   document.getElementById('indexPopup').style.display = 'none';
+}
