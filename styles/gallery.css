@@ -19,6 +19,11 @@ body{
    border: 2px solid rgba(175,238,238);
    transition: transform 0.2s;
 }
+@media screen and (max-width: 410px){
+   .imageItem img{
+      height: 160px;
+   }
+}
 
 .popup{
    display: none;
@@ -60,7 +65,7 @@ body{
    position: absolute;
    text-align: right;
    z-index: 999;
-   color: white;
+   color: #000000;
    font-size: 30px;
    width: 80%;
    top: 30px;
@@ -71,4 +76,7 @@ body{
    left: 30px;
    font-size: 40px;
    position: fixed;
+}
+#popup-img.selected{
+   opacity: 0.3;
 }
