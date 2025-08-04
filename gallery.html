@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ForRini</title>
+
+      <link rel="stylesheet" href="styles/gallery.css">
+      <link rel="stylesheet" href="styles/menu.css">
+   </head>
+
+   <body>
+
+      <div id="menu" class="menu">
+         <div class="headMenu">
+            <a href="" class="menuTitle">גלריה</a>
+
+            <div onclick="openPhoneMenu()" class="hamburgerSelector">
+               <div class="bar"></div>
+               <div class="bar"></div>
+               <div class="bar"></div>
+            </div>
+
+            <div class="headMenuOptions">
+               <a href="index.html">בית</a>
+               <a href="gallery.html">גלריה</a>
+               <a href="">הודעות ישנות</a>
+               <a href="">מטרות</a>
+               <a href="">משחק (לעשות בהמשך)</a>
+            </div>
+         </div>
+
+         <div id="phoneMenu" class="phoneMenu" style="display: none;">
+            <a href="index.html">בית</a>
+            <a href="gallery.html">גלריה</a>
+            <a href="">הודעות ישנות</a>
+            <a href="">מטרות</a>
+            <a href="">משחק (לעשות בהמשך)</a>
+         </div>
+      </div>
+
+      <div class="galleryBody">
+         <div id="imagesContiner" class="imagesContiner">
+
+            <div class="imageItem" onclick="openPopup('imgs/1.JPG', 
+            'ריני שלי אני אוהב אותך מאודדדדדדדדדדדדד')">
+               <img src="imgs/1.JPG" alt="">
+            </div>
+
+            <div class="imageItem" onclick="openPopup('imgs/2.JPG', 
+            'ריני תודה שנכנסת לי לחיים')">
+               <img src="imgs/2.JPG" alt="">
+            </div>
+
+            <div class="imageItem" onclick="openPopup('imgs/3.JPG', 
+            'text')">
+               <img src="imgs/3.JPG" alt="">
+            </div>
+
+            <div class="imageItem" onclick="openPopup('imgs/4.JPG', 
+            'text')">
+               <img src="imgs/4.JPG" alt="">
+            </div>
+         </div>
+
+         <div id="popup" class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div>
+               <img class="selected" id="popup-img" onclick="clickImagePopup()" src="" alt="">
+               <p class="selected" id="popup-text"></p>
+            </div>
+         </div>
+      </div>
+
+      <script src="scripts/menuScript.js"></script>
+      <script src="scripts/gallery.js"></script>
+   </body>
+</html>

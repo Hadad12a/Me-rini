@@ -1,0 +1,51 @@
+.headMenu{
+   display: flex; justify-content: space-between; align-items: center;
+   padding: 15px 20px 15px 20px;
+   background-color: rgba(175,238,238);
+   border-bottom: 1px solid ;
+}
+.headMenu a{
+   text-decoration: none; color: black;
+   padding-right: 10px;
+   font-size: 20px;
+}
+.menuTitle{
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.hamburgerSelector .bar{
+   width: 30px;
+   height: 5px;
+   margin: 5px;
+   background-color: black;
+   border-radius: 25px;
+}
+
+.phoneMenu{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+   background-color: rgba(175, 238, 238, 0.5);
+   font-size: 22px;
+   padding: 20px 0px 20px 0px;
+   border-bottom: 1px solid ;
+}
+.phoneMenu a{
+   text-decoration: none;
+   color: black;
+   border-bottom: 1px solid ;
+}
+
+@media screen and (max-width: 700px){
+   .headMenuOptions{
+      display: none;
+   }
+}
+@media screen and (min-width: 700px){
+   .hamburgerSelector{
+      display: none;
+   }
+}

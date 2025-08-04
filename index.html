@@ -1,44 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home || ILoveRini</title>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ForRini</title>
 
-        <link rel="stylesheet" href="styles/homeStyle.css">
-    </head>
+      <link rel="stylesheet" href="styles/index.css">
+      <link rel="stylesheet" href="styles/menu.css">
+   </head>
 
-    <body>
-        <div id="wrappr" class="wrapper">
-            <div class="lid one"></div>
-            <div class="lid two"></div>
-            <div class="envelope"></div>
-            <div class="letter">
-                <p class="letterTitle">לריני שלי</p>
-                <p class="letterText">
-                    אני אוהב אותך ועשיתי לנו משהו קטן שיחזיק
-                     לעוד כמה שנים, ותכנסי לכאן שאת מתגעגעת</p>
+   <body>
+
+      <div id="menu" class="menu">
+         <div class="headMenu">
+            <a href="" class="menuTitle">❤️ט״ו באב שמח ריני</a>
+
+            <div onclick="openPhoneMenu()" class="hamburgerSelector">
+               <div class="bar"></div>
+               <div class="bar"></div>
+               <div class="bar"></div>
             </div>
-        </div>
 
-        <div id="menuIndex" class="menu">
-            <a href="Gallery.html">גלריה</a>
-            <a href="oldChat.html">הודעות</a>
-        </div>
+            <div class="headMenuOptions">
+               <a href="index.html">בית</a>
+               <a href="gallery.html">גלריה</a>
+               <a href="">הודעות ישנות</a>
+               <a href="">מטרות</a>
+               <a href="">משחק (לעשות בהמשך)</a>
+            </div>
+         </div>
 
-        <div id="homeImges" class="homeImges">
-            <img onclick="openIndexPopup('Images/indexImg/IMG_5122.PNG')" 
-            src="Images/indexImg/IMG_5122.PNG" alt="">
+         <div id="phoneMenu" class="phoneMenu" style="display: none;">
+            <a href="index.html">בית</a>
+            <a href="gallery.html">גלריה</a>
+            <a href="">הודעות ישנות</a>
+            <a href="">מטרות</a>
+            <a href="">משחק (לעשות בהמשך)</a>
+         </div>
+      </div>
 
-            <img onclick="openIndexPopup('Images/indexImg/IMG_5123.PNG')" 
-            src="Images/indexImg/IMG_5123.PNG" alt="">
-        </div>
+      <div class="homeBody">
+         
+      </div>
 
-        <div id="indexPopup" class="indexPopup">
-            <span class="close" onclick="indexPopupClose()">&times;</span>
-            <img id="indexPopupImg" src="" alt="">
-        </div>
-
-        <script src="script.js"></script>
-    </body>
+      <script src="scripts/menuScript.js"></script>
+   </body>
 </html>
