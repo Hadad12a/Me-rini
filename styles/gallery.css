@@ -29,7 +29,7 @@ body{
    display: none;
    position: fixed;
    margin-top: 100px;
-   background-color: rgb(6, 8, 10);
+   background-color: rgb(240, 248, 255);
    justify-content: center;
    flex-direction: column;
    z-index: 999;
