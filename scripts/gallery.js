@@ -6,6 +6,7 @@ function openPopup(imageItem, text){
    document.getElementById('popup-img').src = imageItem;
    document.getElementById('popup').style.display = 'grid';
    document.getElementById('menu').style.display = 'none';
+   
    if(textPopupShow === true){
       clickImagePopup();
    }
