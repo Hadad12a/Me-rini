@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>ForRini</title>
+
+      <link rel="stylesheet" href="styles/oldMessages.css">
+      <link rel="stylesheet" href="styles/menu.css">
+   </head>
+
+   <body>
+
+      <div id="menu" class="menu">
+         <div class="headMenu">
+            <a href="" class="menuTitle">הודעות ישנות ששלחתי לך </a>
+
+            <div onclick="openPhoneMenu()" class="hamburgerSelector">
+               <div class="bar"></div>
+               <div class="bar"></div>
+               <div class="bar"></div>
+            </div>
+
+            <div class="headMenuOptions">
+               <a href="index.html">בית</a>
+               <a href="gallery.html">גלריה</a>
+               <a href="oldMessages.html">הודעות ישנות</a>
+               <a href="">מטרות</a>
+            </div>
+         </div>
+
+         <div id="phoneMenu" class="phoneMenu" style="display: none;">
+            <a href="index.html">בית</a>
+            <a href="gallery.html">גלריה</a>
+            <a href="oldMessages.html">הודעות ישנות</a>
+            <a href="">מטרות</a>
+         </div>
+      </div>
+
+      <div class="oldMessagesBody">
+         <div id="messageCon" class="messagesCon">
+
+            <div class="message" onclick="openMessagePopup(1, 
+            'אני אוהב את ריני שלי מאודדדדדד כי היא אחת החשובות בשבילי')">
+               <p>הודעה מ'ס 1</p>
+            </div>
+
+            <div class="message" onclick="openMessagePopup(2, 
+            'אני אוהב את ריני שלי מאודדדדדד כי היא אחת החשובות בשבילי')">
+               <p>הודעה מ'ס 2</p>
+            </div>
+
+            <div class="message" onclick="openMessagePopup(3, 
+            'אני אוהב את ריני שלי מאודדדדדד כי היא אחת החשובות בשבילי')">
+               <p>הודעה מ'ס 3</p>
+            </div>
+
+            <div class="message" onclick="openMessagePopup(4, 
+            'אני אוהב את ריני שלי מאודדדדדד כי היא אחת החשובות בשבילי')">
+               <p>הודעה מ'ס 4</p>
+            </div>
+
+            <div class="message" onclick="openMessagePopup(5, 
+            'אני אוהב את ריני שלי מאודדדדדד כי היא אחת החשובות בשבילי')">
+               <p>הודעה מ'ס 5</p>
+            </div>
+
+         </div>
+
+         <div id="messagesPopup" class="messagesPopup">
+            <span class="close" onclick="closeMassagePopup()">&times;</span>
+            <center>
+            <div class="messageBox">
+               <p id="titlePopup"></p>
+               <p id="textMssagePopup"></p>
+            </div>
+            </center>
+         </div>
+      </div>
+
+      <script src="scripts/menuScript.js"></script>
+      <script src="scripts/oldMessages.js"></script>
+   </body>
+</html>

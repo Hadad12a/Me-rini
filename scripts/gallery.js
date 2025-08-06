@@ -1,12 +1,12 @@
 let textPopupShow = false;
 
-function openPopup(imageItem, text){
+function openPopup(numimage, text){
    document.getElementById('imagesContiner').style.display = 'none';
    document.getElementById('popup-text').innerText = text;
-   document.getElementById('popup-img').src = imageItem;
+   document.getElementById('popup-img').src = 'imgs/' + numimage + '.JPG';
    document.getElementById('popup').style.display = 'grid';
    document.getElementById('menu').style.display = 'none';
-   
+
    if(textPopupShow === true){
       clickImagePopup();
    }
