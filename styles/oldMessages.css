@@ -19,7 +19,7 @@ body{
    height: 120px;
    border-radius: 15px 0px 15px 0px;
    cursor: pointer;
-   border: 2px solid rgba(175,238,238);
+   border: 1px solid black;
 }
 .message {
    display: flex;
@@ -31,19 +31,22 @@ body{
    display: none;
    justify-content: flex-start;
    flex-direction: column;
-
 }
-
+.messagesPopup p{
+   margin: 10px;
+}
 .messageBox{
    display: flex;
    justify-content: flex-start;
    flex-direction: column;
    width: 85vw;
-   height: 75vh;
+   height: 100%;
    margin-top: 50px;
-   background-color: rgb(255, 242, 218);
+   background-color: rgba(175, 238, 238, 0.5);
    border-radius: 20px 0px 20px 0px;
    border: 2px solid #a4d4f2;
+   box-sizing: border-box;
+   margin-bottom: 20px;
 }
 
 .close{

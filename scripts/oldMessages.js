@@ -2,7 +2,7 @@ function openMessagePopup(messageNum, messageText){
    document.getElementById('messageCon').style.display = 'none';
    document.getElementById('messagesPopup').style.display = 'flex';
 
-   document.getElementById('titlePopup').innerText = 'הודעה מס ' + messageNum;
+   document.getElementById('titlePopup').innerText = 'הודעה ' + messageNum;
    document.getElementById('textMssagePopup').innerText = messageText;
 }
 
