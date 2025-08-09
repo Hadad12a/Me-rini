@@ -45,6 +45,14 @@ body{
    align-content: center;
    align-items: center;
    text-align: center;
+   overflow: hidden;
+}
+.popup div .textBox{
+   width: 100%;
+   height: 100%;
+   overflow: scroll;
+   position: absolute;
+   top: 0px;
 }
 .popup div:hover{
    cursor: pointer;
@@ -56,7 +64,7 @@ body{
    justify-content: center;
    margin-top: 50px;
    object-fit: contain;
-   margin: 25px 10px 0px 10px;
+   margin-top: 25px;
    border-radius: 20px 0px 20px 0px;
    border: 2px solid #a4d4f2;
    
@@ -64,7 +72,13 @@ body{
 @media screen and (max-width: 360px){
    .popup div img{
       max-height: 50vh;
-      margin-top: 40px;
+      margin-top: 0px;
+   }
+   .popup div p{
+      top: 1px;
+      margin-right: 10px;
+      margin-left: 10px;
+      padding-bottom: 15px;
    }
 }
 .popup div p{
@@ -73,10 +87,13 @@ body{
    text-align: right;
    z-index: 999;
    color: #000000;
-   font-size: 23px;
+   font-size: 20px;
    width: 80%;
-   top: 30px;
+   
    align-items: flex-start;
+   text-align: center;
+   justify-content: center;
+   align-items: center;
 }
 .close{
    top: 30px;

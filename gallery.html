@@ -25,7 +25,7 @@
                <a href="index.html">בית</a>
                <a href="gallery.html">גלריה</a>
                <a href="oldMessages.html">הודעות ישנות</a>
-               <a href="">מטרות</a>
+               <a href="tasks.html">מטרות</a>
             </div>
          </div>
 
@@ -33,7 +33,7 @@
             <a href="index.html">בית</a>
             <a href="gallery.html">גלריה</a>
             <a href="oldMessages.html">הודעות ישנות</a>
-            <a href="">מטרות</a>
+            <a href="tasks.html">מטרות</a>
          </div>
       </div>
 
@@ -51,7 +51,7 @@
             </div>
 
             <div class="imageItem" onclick="openPopup(3, 
-            'אנה ואלזההההההההההההה באמת שאם את שואלת אותי אני רואה בך אמא לילידם שלי ואני יודע שזה משפט גדול אבל אני באמת מתכוון לזה')">
+            'אנה ואלזההההההה באמת שאם את שואלת אותי אני רואה בך אמא לילידם שלי ואני יודע שזה משפט גדול אבל אני באמת מתכוון לזה')">
                <img src="imgs/3.JPG" alt="">
             </div>
 
@@ -134,8 +134,10 @@
          <div id="popup" class="popup">
             <span class="close" onclick="closePopup()">&times;</span>
             <div class="selected">
-               <img id="popup-img" onclick="clickImagePopup()" src="" alt="">
-               <p onclick="clickImagePopup()" id="popup-text"></p>
+               <img onclick="clickImagePopup()" id="popup-img" src="" alt="">
+               <div onclick="clickImagePopup()" class="textBox">
+                  <p id="popup-text"></p>
+               </div>
             </div>
          </div>
       </div>
