@@ -1,13 +1,15 @@
 sessionStorage.setItem("isPassword", true);
 
+openAndClosePasswordSystem();
+
 function openAndClosePasswordSystem(){
-   if(sessionStorage.getItem('isPassword') = true){
+   if(sessionStorage.getItem('isPassword') === "true"){
       document.getElementById('menu').style.display = 'none';
       document.getElementById('homeBody').style.display = 'none';
       document.getElementById('passwordSystem').style.display = 'flex';
    }
    
-   if(sessionStorage.getItem('isPassword') === false){//logged in....
+   if(sessionStorage.getItem('isPassword') === "false"){//logged in....
       document.getElementById('passwordSystem').style.display = '';
       document.getElementById('menu').style.display = '';
       document.getElementById('homeBody').style.display = '';

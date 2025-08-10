@@ -1,3 +1,3 @@
-if(sessionStorage.getItem("isPassword") === true){
+if(sessionStorage.getItem("isPassword") === "true"){
    window.location.href = "index.html";
 }
