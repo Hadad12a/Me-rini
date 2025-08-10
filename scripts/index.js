@@ -2,6 +2,7 @@ sessionStorage.setItem("isPassword", true);
 let needPass = sessionStorage.getItem("isPassword");
 
 console.log(needPass);
+openAndClosePasswordSystem();
 
 function openAndClosePasswordSystem(){
    if(needPass = true){
