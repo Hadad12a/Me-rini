@@ -1,17 +1,13 @@
 sessionStorage.setItem("isPassword", true);
-let needPass = sessionStorage.getItem("isPassword");
-
-console.log(needPass);
-openAndClosePasswordSystem();
 
 function openAndClosePasswordSystem(){
-   if(needPass = true){
+   if(sessionStorage.getItem('isPassword') = true){
       document.getElementById('menu').style.display = 'none';
       document.getElementById('homeBody').style.display = 'none';
       document.getElementById('passwordSystem').style.display = 'flex';
    }
    
-   if(!needPass){//logged in....
+   if(sessionStorage.getItem('isPassword') === false){//logged in....
       document.getElementById('passwordSystem').style.display = '';
       document.getElementById('menu').style.display = '';
       document.getElementById('homeBody').style.display = '';
@@ -20,11 +16,13 @@ function openAndClosePasswordSystem(){
 
 function login(){
    let password = 'riniduli';
-   if(document.getElementById('passIN').innerText = password){
-      console.log('work');
+
+   if(document.getElementById('passIN').value === password){
       sessionStorage.setItem("isPassword", false);
-      openAndClosePasswordSystem();
-   }else{
-      console.log('not the same!');
+      openAndClosePasswordSystem(); 
+      alert('ברוך הבא');
+   }
+   else{
+      alert('הסיסמה שגויה');
    }
 }

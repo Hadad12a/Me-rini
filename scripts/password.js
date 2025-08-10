@@ -1,9 +1,3 @@
-let needToLogin = sessionStorage.getItem("isPassword");
-console.log(needToLogin);
-
-if(needToLogin = true){
+if(sessionStorage.getItem("isPassword") === true){
    window.location.href = "index.html";
-}
-else{
-   return;
 }
